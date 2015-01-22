@@ -1,0 +1,23 @@
+<nav>
+  <ul>
+    <li class="sb-selector sb-selector-none" ng-click="removeAll()">
+      <a>None</a>
+    </li>
+
+    <sb-selector
+      ng-repeat="value in optionsAttr | orderBy:'group'"
+      selection="value"
+    >
+      {{$index + 1}}
+    </sb-selector>
+
+    <li class="sb-selector sb-selector-unselectable-group" ng-repeat="placeholder in placeholders track by $index">
+      <a>{{$index + optionsAttr.length + 1}}</a>
+    </li>
+
+    <li class="sb-selector sb-selector-all" ng-click="addAll()">
+      <a>All</a>
+    </li>
+  </ul>
+</nav>
+

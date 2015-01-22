@@ -1,0 +1,74 @@
+/*******************************
+      directive.scss
+********************************/
+
+$selector-bar: 'sb-bar';
+$selector-selector: $selector-bar '> nav > ul > li';
+
+$color-hover:  #A595F0;
+$color-active: #484F94;
+
+##{$selector-bar},
+##{$selector-selector}{
+  outline-width: 0;
+}
+
+##{$selector-selector}.sb-selector{
+  $border-bar: 1px solid #000;
+
+  float: left;
+
+  border: {
+    top: $border-bar;
+    right: $border-bar;
+    bottom: $border-bar;
+  }
+  padding: 5px 0;
+  width: 30px;
+
+  &:first-child{
+    border-left: $border-bar;
+  }
+
+  &:hover{
+    cursor: pointer;
+    background-color: $color-hover;
+  }
+}
+
+##{$selector-selector}.sb-selector-fst-group{
+  background-color: red;
+}
+##{$selector-selector}.sb-selector-snd-group{
+  background-color: green;
+
+}##{$selector-selector}.sb-selector-unselectable-group{
+  background-color: yellow;
+
+  &:hover{
+    cursor: default;
+    background-color: yellow;
+  }
+}
+
+##{$selector-selector}.sb-selector-all,
+##{$selector-selector}.sb-selector-none{
+  width: 70px;
+  background-color: #B9BABB;
+
+  &:hover{
+    background-color: $color-hover;
+  }
+}
+
+##{$selector-selector} a{
+  display: block;
+  text-align: center;
+}
+
+//States
+
+##{$selector-selector}.sb-selected.is-active{
+  background-color: $color-active;
+}
+

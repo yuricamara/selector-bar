@@ -1,0 +1,112 @@
+/*******************************
+      _not-directive.scss
+********************************/
+
+* {
+  box-sizing: border-box;
+}
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
+}
+
+html,
+body{
+  height: 1000px;
+}
+
+body{
+  background-color: #ccc;
+}
+
+i{
+  font-style: italic;
+}
+
+.c-page-title{
+  height: 50px;
+
+  line-height: 50px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+.l-container{
+  margin: 0 auto;
+  width: 1020px;
+  height: 100%;
+
+  background-color: #FFF;
+}
+
+.l-main{
+  width: 100%;
+}
+
+.l-data{
+  margin: 0 50px;
+}
+
+#sb-bar{
+  margin: 0 auto;
+  display: table;
+  padding-bottom: 30px;
+}
+
+.c-code{
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.c-scopes{
+  float: left;
+  width: 50%;
+
+  & h2{
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  & pre{
+    font-size: 14px;
+    float: left;
+    margin-top: 30px;
+  }
+}
+
+.c-selectedObject,
+.c-options{
+  float: left;
+  width: 50%;
+}
+
+.c-selectedObject pre{
+  margin-left: 30px;
+}
+
+.c-infos{
+  float: right;
+  width: 50%;
+
+  & p{
+    text-indent: 20px;
+  }
+
+  & a{
+    margin-top: 10px;
+    display: block;
+
+    text-indent: 20px;
+  }
+}
+
+
