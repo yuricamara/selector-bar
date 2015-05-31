@@ -2,6 +2,8 @@
       _not-directive.scss
 ********************************/
 
+/**** reset ****/
+
 * {
   box-sizing: border-box;
 }
@@ -24,19 +26,7 @@ body{
   background-color: #ccc;
 }
 
-i{
-  font-style: italic;
-}
-
-.c-page-title{
-  height: 50px;
-
-  line-height: 50px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-}
-
+/**** layout *****/
 
 .l-container{
   margin: 0 auto;
@@ -54,12 +44,23 @@ i{
   margin: 0 50px;
 }
 
+/**** component ****/
+
 #sb-bar{
   margin: 0 auto;
   display: table;
   padding-bottom: 30px;
 }
 
+
+.c-page-title{
+  height: 50px;
+
+  line-height: 50px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
 .c-code{
   text-align: center;
   font-size: 18px;
