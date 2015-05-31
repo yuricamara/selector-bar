@@ -3,7 +3,7 @@
 ********************************/
 
 $selector-bar: 'sb-bar';
-$selector-selector: $selector-bar '> nav > ul > li';
+$selector-selector: $selector-bar li;
 
 $color-hover:  #A595F0;
 $color-active: #484F94;
@@ -71,4 +71,3 @@ $color-active: #484F94;
 ##{$selector-selector}.sb-selected.is-active{
   background-color: $color-active;
 }
-

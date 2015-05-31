@@ -68,12 +68,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 ********************************/
 /* line 11, stylesheets/_directives.scss */
 #sb-bar,
-#sb-bar > nav > ul > li {
+#sb-bar li {
   outline-width: 0;
 }
 
 /* line 16, stylesheets/_directives.scss */
-#sb-bar > nav > ul > li.sb-selector {
+#sb-bar li.sb-selector {
   float: left;
   border-top: 1px solid #000;
   border-right: 1px solid #000;
@@ -82,55 +82,55 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 30px;
 }
 /* line 29, stylesheets/_directives.scss */
-#sb-bar > nav > ul > li.sb-selector:first-child {
+#sb-bar li.sb-selector:first-child {
   border-left: 1px solid #000;
 }
 /* line 33, stylesheets/_directives.scss */
-#sb-bar > nav > ul > li.sb-selector:hover {
+#sb-bar li.sb-selector:hover {
   cursor: pointer;
   background-color: #A595F0;
 }
 
 /* line 39, stylesheets/_directives.scss */
-#sb-bar > nav > ul > li.sb-selector-fst-group {
+#sb-bar li.sb-selector-fst-group {
   background-color: red;
 }
 
 /* line 42, stylesheets/_directives.scss */
-#sb-bar > nav > ul > li.sb-selector-snd-group {
+#sb-bar li.sb-selector-snd-group {
   background-color: green;
 }
 
 /* line 45, stylesheets/_directives.scss */
-#sb-bar > nav > ul > li.sb-selector-unselectable-group {
+#sb-bar li.sb-selector-unselectable-group {
   background-color: yellow;
 }
 /* line 48, stylesheets/_directives.scss */
-#sb-bar > nav > ul > li.sb-selector-unselectable-group:hover {
+#sb-bar li.sb-selector-unselectable-group:hover {
   cursor: default;
   background-color: yellow;
 }
 
 /* line 54, stylesheets/_directives.scss */
-#sb-bar > nav > ul > li.sb-selector-all,
-#sb-bar > nav > ul > li.sb-selector-none {
+#sb-bar li.sb-selector-all,
+#sb-bar li.sb-selector-none {
   width: 70px;
   background-color: #B9BABB;
 }
 /* line 59, stylesheets/_directives.scss */
-#sb-bar > nav > ul > li.sb-selector-all:hover,
-#sb-bar > nav > ul > li.sb-selector-none:hover {
+#sb-bar li.sb-selector-all:hover,
+#sb-bar li.sb-selector-none:hover {
   background-color: #A595F0;
 }
 
 /* line 64, stylesheets/_directives.scss */
-#sb-bar > nav > ul > li a {
+#sb-bar li a {
   display: block;
   text-align: center;
 }
 
 /* line 71, stylesheets/_directives.scss */
-#sb-bar > nav > ul > li.sb-selected.is-active {
+#sb-bar li.sb-selected.is-active {
   background-color: #484F94;
 }
 
@@ -156,7 +156,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 20, stylesheets/_not-directives.scss */
 html,
 body {
-  height: 1000px;
+  height: 100%;
 }
 
 /* line 25, stylesheets/_not-directives.scss */
@@ -168,30 +168,31 @@ body {
 /* line 31, stylesheets/_not-directives.scss */
 .l-container {
   margin: 0 auto;
-  width: 1020px;
+  max-width: 1020px;
+  width: 100%;
   height: 100%;
   background-color: #FFF;
 }
 
-/* line 39, stylesheets/_not-directives.scss */
+/* line 40, stylesheets/_not-directives.scss */
 .l-main {
   width: 100%;
 }
 
-/* line 43, stylesheets/_not-directives.scss */
+/* line 44, stylesheets/_not-directives.scss */
 .l-data {
   margin: 0 50px;
 }
 
 /**** component ****/
-/* line 49, stylesheets/_not-directives.scss */
+/* line 50, stylesheets/_not-directives.scss */
 #sb-bar {
   margin: 0 auto;
   display: table;
   padding-bottom: 30px;
 }
 
-/* line 56, stylesheets/_not-directives.scss */
+/* line 57, stylesheets/_not-directives.scss */
 .c-page-title {
   height: 50px;
   line-height: 50px;
@@ -200,7 +201,7 @@ body {
   font-weight: bold;
 }
 
-/* line 64, stylesheets/_not-directives.scss */
+/* line 65, stylesheets/_not-directives.scss */
 .c-code {
   text-align: center;
   font-size: 18px;
@@ -208,45 +209,39 @@ body {
   margin-bottom: 30px;
 }
 
-/* line 71, stylesheets/_not-directives.scss */
-.c-scopes {
-  float: left;
-  width: 50%;
-}
-/* line 75, stylesheets/_not-directives.scss */
+/* line 73, stylesheets/_not-directives.scss */
 .c-scopes h2 {
   font-weight: bold;
   font-size: 14px;
 }
-/* line 80, stylesheets/_not-directives.scss */
+/* line 78, stylesheets/_not-directives.scss */
 .c-scopes pre {
   font-size: 14px;
   float: left;
   margin-top: 30px;
 }
 
-/* line 87, stylesheets/_not-directives.scss */
+/* line 85, stylesheets/_not-directives.scss */
 .c-selectedObject,
 .c-options {
   float: left;
   width: 50%;
 }
 
-/* line 93, stylesheets/_not-directives.scss */
+/* line 91, stylesheets/_not-directives.scss */
 .c-selectedObject pre {
   margin-left: 30px;
 }
 
-/* line 97, stylesheets/_not-directives.scss */
+/* line 95, stylesheets/_not-directives.scss */
 .c-infos {
-  float: right;
-  width: 50%;
+  clear: left;
 }
-/* line 101, stylesheets/_not-directives.scss */
+/* line 97, stylesheets/_not-directives.scss */
 .c-infos p {
   text-indent: 20px;
 }
-/* line 105, stylesheets/_not-directives.scss */
+/* line 101, stylesheets/_not-directives.scss */
 .c-infos a {
   margin-top: 10px;
   display: block;

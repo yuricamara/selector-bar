@@ -5,7 +5,7 @@ angular.module(
 ])
   .constant('Settings', {
     'bar': {
-      'selectors': 20
+      'selectors': 10
     },
     'selector': {
       'CSSSelectorFst' : 'group1', //nome do seletor para o primeiro grupo
@@ -24,7 +24,7 @@ angular.module(
         "value": "B"
       },
       {
-        "group": "group1",
+        "group": "group2",
         "value": "C"
       },
       {
@@ -34,40 +34,7 @@ angular.module(
       {
         "group": "group2",
         "value": "E"
-      },
-      {
-        "group": "group2",
-        "value": "F"
-      },
-      {
-        "group": "group2",
-        "value": "G"
-      },
-      {
-        "group": "group1",
-        "value": "H"
-      },
-      {
-        "group": "group2",
-        "value": "I"
-      },
-      {
-        "group": "group2",
-        "value": "J"
-      },
-      {
-        "group": "group2",
-        "value": "L"
-      },
-      {
-        "group": "group2",
-        "value": "M"
-      },
-      {
-        "group": "group1",
-        "value": "N"
       }
-
     ];
   }]);
 

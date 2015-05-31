@@ -78,6 +78,19 @@ module.exports = function(grunt){
     },
 
     /*********************
+      Compass
+    **********************/
+
+    compass:{
+      dev: {
+        options: {
+          sassDir: 'app/global',
+          cssDir: 'app/global'
+        }
+      }
+    },
+
+    /*********************
       Watch
     **********************/
 
@@ -90,7 +103,12 @@ module.exports = function(grunt){
           'app/diretivas/**/*.tpl.html'
         ],
         tasks: ['ngtemplates:main']
-
+      },
+      compass: {
+        files: [
+          'app/global/stylesheets/*.scss'
+        ],
+        tasks: ['compass:dev']
       }
     }
   });
@@ -100,6 +118,7 @@ module.exports = function(grunt){
   *********************************************************/
   grunt.loadNpmTasks('grunt-angular-templates');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
