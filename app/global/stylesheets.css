@@ -66,72 +66,63 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*******************************
       directive.scss
 ********************************/
-/* line 11, stylesheets/_directives.scss */
+/* line 5, stylesheets/_directives.scss */
 #sb-bar,
 #sb-bar li {
   outline-width: 0;
 }
 
-/* line 16, stylesheets/_directives.scss */
-#sb-bar li.sb-selector {
-  float: left;
-  border-top: 1px solid #000;
-  border-right: 1px solid #000;
-  border-bottom: 1px solid #000;
-  padding: 5px 0;
-  width: 30px;
-}
-/* line 29, stylesheets/_directives.scss */
-#sb-bar li.sb-selector:first-child {
-  border-left: 1px solid #000;
-}
-/* line 33, stylesheets/_directives.scss */
-#sb-bar li.sb-selector:hover {
+/* line 10, stylesheets/_directives.scss */
+#sb-bar a {
+  padding: 20px 20px 10px 20px;
+  margin: 0 1px 0 0;
+  text-decoration: none;
+  text-align: center;
+  color: #7f8c8d;
   cursor: pointer;
-  background-color: #A595F0;
+  background: #2c3e50;
+  font-size: 21px;
+  border-bottom: 5px solid #34495e;
+  -webkit-transition: border-bottom .6s linear 0s;
+  transition-property: border-bottom .6s linear 0s;
 }
 
-/* line 39, stylesheets/_directives.scss */
-#sb-bar li.sb-selector-fst-group {
-  background-color: red;
+/* line 26, stylesheets/_directives.scss */
+#sb-bar .is-active a {
+  border-bottom: 5px solid #2ecc71;
+  color: #2ecc71;
 }
 
-/* line 42, stylesheets/_directives.scss */
-#sb-bar li.sb-selector-snd-group {
-  background-color: green;
+/* line 31, stylesheets/_directives.scss */
+#sb-bar li {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  zoom: 1;
+  background: #7f8c8d;
+}
+
+/* line 40, stylesheets/_directives.scss */
+#sb-bar li a {
+  float: left;
+  margin-left: -4px;
 }
 
 /* line 45, stylesheets/_directives.scss */
-#sb-bar li.sb-selector-unselectable-group {
-  background-color: yellow;
-}
-/* line 48, stylesheets/_directives.scss */
-#sb-bar li.sb-selector-unselectable-group:hover {
-  cursor: default;
-  background-color: yellow;
+#sb-bar > a:first-child,
+#sb-bar li:first-child a {
+  margin-left: 0;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
-/* line 54, stylesheets/_directives.scss */
-#sb-bar li.sb-selector-all,
-#sb-bar li.sb-selector-none {
-  width: 70px;
-  background-color: #B9BABB;
-}
-/* line 59, stylesheets/_directives.scss */
-#sb-bar li.sb-selector-all:hover,
-#sb-bar li.sb-selector-none:hover {
-  background-color: #A595F0;
-}
-
-/* line 64, stylesheets/_directives.scss */
-#sb-bar li a {
-  display: block;
-  text-align: center;
-}
-
-/* line 71, stylesheets/_directives.scss */
-#sb-bar li.sb-selected.is-active {
-  background-color: #484F94;
+/* line 52, stylesheets/_directives.scss */
+#sb-bar > a:last-child,
+#sb-bar li:last-child > a {
+  margin-right: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
 /*******************************

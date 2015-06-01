@@ -2,72 +2,56 @@
       directive.scss
 ********************************/
 
-$selector-bar: 'sb-bar';
-$selector-selector: $selector-bar li;
-
-$color-hover:  #A595F0;
-$color-active: #484F94;
-
-##{$selector-bar},
-##{$selector-selector}{
+#sb-bar,
+#sb-bar li{
   outline-width: 0;
 }
 
-##{$selector-selector}.sb-selector{
-  $border-bar: 1px solid #000;
+#sb-bar a {
+  padding: 20px 20px 10px 20px;
+  margin:0 1px 0 0;
+  text-decoration:none;
+  text-align:center;
+  color:#7f8c8d;
+  cursor:pointer;
+  background:#2c3e50;
+  font-size:21px;
 
-  float: left;
-
-  border: {
-    top: $border-bar;
-    right: $border-bar;
-    bottom: $border-bar;
-  }
-  padding: 5px 0;
-  width: 30px;
-
-  &:first-child{
-    border-left: $border-bar;
-  }
-
-  &:hover{
-    cursor: pointer;
-    background-color: $color-hover;
-  }
+  border-bottom:5px solid #34495e;
+  -webkit-transition:border-bottom .6s linear 0s;
+    transition-property:border-bottom .6s linear 0s;
 }
 
-##{$selector-selector}.sb-selector-fst-group{
-  background-color: red;
-}
-##{$selector-selector}.sb-selector-snd-group{
-  background-color: green;
 
-}##{$selector-selector}.sb-selector-unselectable-group{
-  background-color: yellow;
-
-  &:hover{
-    cursor: default;
-    background-color: yellow;
-  }
+#sb-bar .is-active a {
+  border-bottom:5px solid #2ecc71;
+  color:#2ecc71;
 }
 
-##{$selector-selector}.sb-selector-all,
-##{$selector-selector}.sb-selector-none{
-  width: 70px;
-  background-color: #B9BABB;
-
-  &:hover{
-    background-color: $color-hover;
-  }
+#sb-bar li {
+  display:inline-block;
+  list-style:none;
+  padding:0;
+  margin:0;
+  zoom:1;
+  background:#7f8c8d;
 }
 
-##{$selector-selector} a{
-  display: block;
-  text-align: center;
+#sb-bar li a {
+  float:left;
+  margin-left:-4px;
 }
 
-//States
+#sb-bar > a:first-child,
+#sb-bar li:first-child a {
+  margin-left:0;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
 
-##{$selector-selector}.sb-selected.is-active{
-  background-color: $color-active;
+#sb-bar>a:last-child,
+#sb-bar li:last-child > a{
+  margin-right: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
