@@ -10,63 +10,69 @@
   <title>Selector Bar</title>
 </head>
 <body ng-cloak>
-
-  <div ng-controller="DataCtrl" class="l-container">
-    <main class="l-main">
+  <header class="l-header">
+    <div class="l-header-content">
       <h1 class="c-page-title">Selector Bar Demo</h1>
+      <ul class="wrap-links-externos">
+        <li class="repositorio links-externos">
+            <a href="https://github.com/yuricamara/selector-bar" title="Repositório no Github" target="_blank">Repositório</a>
+        </li>
+        <li class="portfolio links-externos">
+            <a href="http://www.yuricamara.com.br" title="Site do Desenvolvedor" target="_blank">Desenvolvedor</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main ng-controller="DataCtrl" class="l-container">
+    <div class="l-main">
 
       <!-- directive -->
       <sb-bar id="sb-bar" ng-model="selectedObject" options="options"></sb-bar>
 
-      <div class="l-data">
-        <p class="c-code">
+        <p class="c-code-html">
           &lt;sb-bar id=&quot;sb-bar&quot; ng-model=&quot;selectedObject&quot; options=&quot;options&quot;&gt;&lt;/sb-bar&gt;
         </p>
 
-        <div class="c-scopes">
-
-          <div class="c-options">
-            <h2 class="c-options-title">options</h2>
-            <pre class="c-options-data">
-            [
-              {
-                &quot;group&quot;: &quot;group1&quot;,
-                &quot;value&quot;: &quot;A&quot;
-              },
-              {
-                &quot;group&quot;: &quot;group1&quot;,
-                &quot;value&quot;: &quot;B&quot;
-              },
-              {
-                &quot;group&quot;: &quot;group2&quot;,
-                &quot;value&quot;: &quot;C&quot;
-              },
-              {
-                &quot;group&quot;: &quot;group2&quot;,
-                &quot;value&quot;: &quot;D&quot;
-              },
-              {
-                &quot;group&quot;: &quot;group2&quot;,
-                &quot;value&quot;: &quot;E&quot;
-              }
-            ]
-            </pre>
+        <div class="c-code-json-wrap">
+          <p class="c-code-json-title">options</p>
+          <code>
+            <pre class="c-code-json">
+[
+  {
+    &quot;group&quot;: &quot;group1&quot;,
+    &quot;value&quot;: &quot;A&quot;
+  },
+  {
+    &quot;group&quot;: &quot;group1&quot;,
+    &quot;value&quot;: &quot;B&quot;
+  },
+  {
+    &quot;group&quot;: &quot;group2&quot;,
+    &quot;value&quot;: &quot;C&quot;
+  },
+  {
+    &quot;group&quot;: &quot;group2&quot;,
+    &quot;value&quot;: &quot;D&quot;
+  },
+  {
+    &quot;group&quot;: &quot;group2&quot;,
+    &quot;value&quot;: &quot;E&quot;
+  }
+]
+              </pre>
+            </code>
           </div>
-          <div class="c-selectedObject">
-            <h2>selectedObject</h2>
-            <pre>{{selectedObject | json}}</pre>
+          <div class="c-code-json-wrap">
+            <p class="c-code-json-title">selectedObject</p>
+            <pre class="c-code-json">{{selectedObject | json}}</pre>
           </div>
-        </div>
-
         <div class="c-infos">
           <p>Cada seletor colorido da barra representa um dos objetos contidos no array <i>options</i> exceto os seletores amarelos que são meros placeholders.</p>
           <p>A barra é criada dinamicamente de acordo com o valor do array <i>options</i>.Os objetos deste array com propriedade group igual a group1 são colocados a esquerda da barra e recebem a cor vermelha. Os objetos com propriedade group igual a group2 são colocados após os seletores do grupo1 e recebem a cor verde.</p>
           <p>Use CTRL para selecionar mais de um seletor. Os objetos selecionados são adicionados ou retirados de <i>selectedObject</i> na ordem.</p>
-          <a href="https://github.com/yuricamara/selector-bar">Github</a>
         </div>
-      </div>
-    </main>
-  </div>
+    </div>
+  </main>
 
   <!-- build:js scripts.js -->
 

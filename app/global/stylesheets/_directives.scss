@@ -9,7 +9,6 @@
 
 #sb-bar a {
   padding: 20px 20px 10px 20px;
-  margin:0 1px 0 0;
   text-decoration:none;
   text-align:center;
   color:#7f8c8d;
@@ -44,14 +43,14 @@
 
 #sb-bar > a:first-child,
 #sb-bar li:first-child a {
-  margin-left:0;
+  border-right: 1px solid;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
 
 #sb-bar>a:last-child,
 #sb-bar li:last-child > a{
-  margin-right: 0;
+  border-left: 1px solid;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
