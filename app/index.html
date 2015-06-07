@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <!-- build:css stylesheets.css -->
-  <link rel="stylesheet" href="global/stylesheets.css?v2">
+  <link rel="stylesheet" href="global/stylesheets.css?v3">
   <!-- endbuild -->
   <title>Selector Bar</title>
 </head>
@@ -26,10 +26,10 @@
   <main ng-controller="DataCtrl" class="l-container">
     <div class="l-main">
         <p class="c-code-html">
-          &lt;<span class="c-code-html-el">sb-bar</span> <span class="c-code-html-attr">id</span>=<span class="c-code-html-attrvalue">&quot;sb-bar&quot;</span> <span class="c-code-html-attr">ng-model</span>=<span class="c-code-html-attrvalue">&quot;selectedObject&quot;</span> <span class="c-code-html-attr">options</span>=<span class="c-code-html-attrvalue">&quot;options&quot;</span>&gt;<br>&lt;/<span class="c-code-html-el">sb-bar</span>&gt;
+          &lt;<span class="c-code-html-el">sb-bar</span><span class="c-code-html-attr"> options</span>=<span class="c-code-html-attrvalue">&quot;options&quot;</span><span class="c-code-html-attr"> ng-model</span>=<span class="c-code-html-attrvalue">&quot;selectedObject&quot;</span>&gt;<br>&lt;/<span class="c-code-html-el">sb-bar</span>&gt;
         </p>
 
-        <sb-bar id="sb-bar" ng-model="selectedObject" options="options"></sb-bar>
+        <sb-bar options="options" ng-model="selectedObject"></sb-bar>
 
         <div class="c-code-json-wrap">
           <p class="c-code-json-title">options</p>
