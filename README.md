@@ -1,24 +1,16 @@
 Selector Bar
 ======================
 
-Descrição
-----------------------
-
 Barra seletora de objetos implementada como uma diretiva AngularJS.
- 
+
 ```html
-<sb-bar ng-model="ngmodel" options="options"></sb-bar>
+<sb-bar options="options" ng-model="ngmodel"></sb-bar>
 ```
 
 onde:
 
-*ngmodel*: possui um array com os objetos selecionados.
+*options*: array de objetos a serem selecionados.
 
-*options*: possui um array de objetos a serem selecionados.
+*ngmodel*: array com os objetos selecionados.
 
-Demo
-----------------------
-
-Visite o demo com a explicação de funcionameto.
-
-www.yuricamara.com.br/projetos/selector-bar/
+[Clique aqui](www.yuricamara.com.br/projetos/selector-bar/) para exibir demo da app com explicação de funcionameto.
