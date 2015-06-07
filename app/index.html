@@ -68,10 +68,13 @@
           </div>
         <div class="c-infos">
           <p>
-            Cada seletor colorido da barra representa um dos objetos contidos no array <i>options</i> exceto os seletores cinzas que são meros placeholders.
+            Temos aqui uma diretiva AngularJS chamada sb-bar, composta de um atributo <i>options</i> que recebe um array de objetos e um ngModel que expõe um segundo array dinâmico de objetos em <i>selectedObject</i>. O array <i>selectedObject</i> é montado de acordo com os seletores selecionados na selector bar e o array vindo de <i>options</i>.
           </p>
           <p>
-            A barra é criada dinamicamente de acordo com o valor do array <i>options</i>. Os objetos deste array com propriedade group igual a red são colocados a esquerda da barra. Os objetos com propriedade group igual a green são colocados após os seletores vermelhos. A quantidade de placeholder é definido dentro de um valor constant interno.
+            Cada seletor colorido da selector bar representa um dos objetos contidos no array <i>options</i> exceto os seletores cinzas que são meros placeholders.
+          </p>
+          <p>
+            A selector bar é criada dinamicamente de acordo com o valor do array <i>options</i>. Os objetos deste array com propriedade group igual a red são colocados a esquerda da barra. Os objetos com propriedade group igual a green são colocados após os seletores vermelhos. A quantidade de placeholders é definida dentro de um valor constant interno.
           </p>
           <p>
              Os objetos são adicionados ou retirados do array <i>selectedObject</i> na ordem que são selecionados.
