@@ -105,7 +105,7 @@ body{
   font-family: monospace, sans-serif;
   font-size: 16px;
   float: left;
-  margin-top: 20px;
+  margin-top: 10px;
   white-space: pre;
   background-color: #F0F0F0;
   width: 100%;
@@ -119,8 +119,11 @@ body{
 }
 
 .c-code-json-title{
-    font-weight: bold;
-    font-size: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #BBA901;
+  background-color: #F0F0F0;
+  padding: 10px;
 }
 
 .c-infos{
