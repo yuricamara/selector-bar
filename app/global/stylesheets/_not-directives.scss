@@ -72,6 +72,7 @@ body{
   height: 110px;
   line-height: 110px;
   font-size: 32px;
+  font-family: Verdana, Geneva, "Droid Sans", sans-serif;
   font-weight: bold;
   display: inline-block;
   color: #F3F3F3;
@@ -79,12 +80,12 @@ body{
 
 .c-code-html{
   font-size: 18px;
-  font-family: monospace, sans-serif;
+  font-family: "Courier New", Courier, monospace, "Droid Sans Mono", "DejaVu Sans Mono", sans-serif;
   background-color: #000;
   color: #FFF;
   padding: 12px 20px;
   border-radius: 4px;
-  width: 680px;
+  width: 735px;
   margin: 60px auto;
   line-height: 1.6;
 }
@@ -102,7 +103,7 @@ body{
 }
 
 .c-code-json{
-  font-family: monospace, sans-serif;
+  font-family: "Courier New", Courier, monospace, "Droid Sans Mono", "DejaVu Sans Mono", sans-serif;
   font-size: 16px;
   float: left;
   margin-top: 10px;
