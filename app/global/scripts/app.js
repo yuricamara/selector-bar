@@ -8,32 +8,32 @@ angular.module(
       'selectors': 10
     },
     'selector': {
-      'CSSSelectorFst' : 'group1', //nome do seletor para o primeiro grupo
-      'CSSSelectorSnd' : 'group2' //nome do seletor para o segundo grupo
+      'CSSSelectorFst' : 'red', //nome do seletor para o primeiro grupo
+      'CSSSelectorSnd' : 'green' //nome do seletor para o segundo grupo
     }
   })
   .controller('DataCtrl',['$scope', function($scope){
 
     $scope.options = [
       {
-        "group": "group1",
-        "value": "A"
+        "group": "red",
+        "value": "4"
       },
       {
-        "group": "group1",
-        "value": "B"
+        "group": "red",
+        "value": "5"
       },
       {
-        "group": "group2",
-        "value": "C"
+        "group": "green",
+        "value": "1"
       },
       {
-        "group": "group2",
-        "value": "D"
+        "group": "green",
+        "value": "2"
       },
       {
-        "group": "group2",
-        "value": "E"
+        "group": "green",
+        "value": "3"
       }
     ];
   }]);
