@@ -109,18 +109,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 42, stylesheets/_directives.scss */
+#sb-bar .sb-selector-unselectable-group a {
+  cursor: no-drop;
+}
+
+/* line 46, stylesheets/_directives.scss */
 #sb-bar .sb-selector-fst-group.is-active a {
   border-bottom: 5px solid red;
   color: red;
 }
 
-/* line 47, stylesheets/_directives.scss */
+/* line 51, stylesheets/_directives.scss */
 #sb-bar .sb-selector-snd-group.is-active a {
   border-bottom: 5px solid #2ecc71;
   color: #2ecc71;
 }
 
-/* line 52, stylesheets/_directives.scss */
+/* line 56, stylesheets/_directives.scss */
 #sb-bar li {
   display: inline-block;
   list-style: none;
@@ -129,13 +134,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: #7f8c8d;
 }
 
-/* line 60, stylesheets/_directives.scss */
+/* line 64, stylesheets/_directives.scss */
 #sb-bar li a {
   float: left;
   margin-left: -4px;
 }
 
-/* line 65, stylesheets/_directives.scss */
+/* line 69, stylesheets/_directives.scss */
 #sb-bar > a:first-child,
 #sb-bar li:first-child a {
   border-right: 1px solid #7f8c8d;
@@ -143,7 +148,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-bottom-left-radius: 3px;
 }
 
-/* line 72, stylesheets/_directives.scss */
+/* line 76, stylesheets/_directives.scss */
 #sb-bar > a:last-child,
 #sb-bar li:last-child > a {
   border-left: 1px solid #7f8c8d;
@@ -168,37 +173,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 17, stylesheets/_not-directives.scss */
+i {
+  font-style: italic;
+}
+
+/* line 21, stylesheets/_not-directives.scss */
 html,
 body {
   height: 100%;
 }
 
 /**** layout *****/
-/* line 24, stylesheets/_not-directives.scss */
+/* line 28, stylesheets/_not-directives.scss */
 .l-header-content,
 .l-main {
   margin: 0 auto;
   max-width: 1020px;
 }
 
-/* line 30, stylesheets/_not-directives.scss */
+/* line 34, stylesheets/_not-directives.scss */
 .l-header {
   background-color: #6797CF;
 }
 
 /**** component ****/
-/* line 36, stylesheets/_not-directives.scss */
+/* line 40, stylesheets/_not-directives.scss */
 .wrap-links-externos {
   float: right;
   margin: 27px 0;
 }
 
-/* line 41, stylesheets/_not-directives.scss */
+/* line 45, stylesheets/_not-directives.scss */
 .wrap-links-externos > .links-externos {
   float: left;
 }
 
-/* line 45, stylesheets/_not-directives.scss */
+/* line 49, stylesheets/_not-directives.scss */
 .wrap-links-externos > .links-externos > a {
   background: transparent url(/img/sprite-links-externos.png) no-repeat;
   color: #9E9E9E;
@@ -209,20 +219,20 @@ body {
   text-indent: -9999px;
 }
 
-/* line 55, stylesheets/_not-directives.scss */
+/* line 59, stylesheets/_not-directives.scss */
 .wrap-links-externos > .repositorio > a {
   background-position: 0 -60px;
   width: 63px;
   margin-right: 10px;
 }
 
-/* line 62, stylesheets/_not-directives.scss */
+/* line 66, stylesheets/_not-directives.scss */
 .wrap-links-externos > .portfolio > a {
   background-position: 15px 0;
   width: 80px;
 }
 
-/* line 67, stylesheets/_not-directives.scss */
+/* line 71, stylesheets/_not-directives.scss */
 .c-page-title {
   height: 110px;
   line-height: 110px;
@@ -232,7 +242,7 @@ body {
   color: #F3F3F3;
 }
 
-/* line 76, stylesheets/_not-directives.scss */
+/* line 80, stylesheets/_not-directives.scss */
 .c-code-html {
   text-align: center;
   font-size: 20px;
@@ -240,7 +250,7 @@ body {
   margin-bottom: 60px;
 }
 
-/* line 83, stylesheets/_not-directives.scss */
+/* line 87, stylesheets/_not-directives.scss */
 .c-code-json {
   font-family: monospace, sans-serif;
   font-size: 16px;
@@ -253,31 +263,31 @@ body {
   padding: 10px;
 }
 
-/* line 95, stylesheets/_not-directives.scss */
+/* line 99, stylesheets/_not-directives.scss */
 .c-code-json-wrap {
   float: left;
   width: 50%;
 }
 
-/* line 100, stylesheets/_not-directives.scss */
+/* line 104, stylesheets/_not-directives.scss */
 .c-code-json-title {
   font-weight: bold;
   font-size: 20px;
 }
 
-/* line 105, stylesheets/_not-directives.scss */
+/* line 109, stylesheets/_not-directives.scss */
 .c-infos {
   clear: left;
   padding: 40px 0;
   line-height: 1.3;
 }
-/* line 110, stylesheets/_not-directives.scss */
+/* line 114, stylesheets/_not-directives.scss */
 .c-infos p {
   text-indent: 20px;
   margin-top: 5px;
   font-size: 18px;
 }
-/* line 115, stylesheets/_not-directives.scss */
+/* line 119, stylesheets/_not-directives.scss */
 .c-infos p:first-child {
   margin-top: 0;
 }

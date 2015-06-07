@@ -39,6 +39,10 @@
   color: #42B071;
 }
 
+#sb-bar .sb-selector-unselectable-group a{
+  cursor: no-drop;
+}
+
 #sb-bar .sb-selector-fst-group.is-active a {
   border-bottom:5px solid red;
   color:red;
