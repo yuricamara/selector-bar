@@ -41,8 +41,6 @@ angular.module(
 angular.module(
   'app', [
     'ng',
-    'ngAria',
-    'ngAnimate',
     'settings',
     'templates'
   ]
