@@ -93,39 +93,60 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 29, stylesheets/_directives.scss */
-#sb-bar .is-active a {
+#sb-bar .sb-selector-none a,
+#sb-bar .sb-selector-all a {
+  color: #7272BF;
+}
+
+/* line 34, stylesheets/_directives.scss */
+#sb-bar .sb-selector-fst-group a {
+  color: #C72929;
+}
+
+/* line 38, stylesheets/_directives.scss */
+#sb-bar .sb-selector-snd-group a {
+  color: #42B071;
+}
+
+/* line 42, stylesheets/_directives.scss */
+#sb-bar .sb-selector-fst-group.is-active a {
+  border-bottom: 5px solid red;
+  color: red;
+}
+
+/* line 47, stylesheets/_directives.scss */
+#sb-bar .sb-selector-snd-group.is-active a {
   border-bottom: 5px solid #2ecc71;
   color: #2ecc71;
 }
 
-/* line 34, stylesheets/_directives.scss */
+/* line 52, stylesheets/_directives.scss */
 #sb-bar li {
   display: inline-block;
   list-style: none;
   padding: 0;
   margin: 0;
-  zoom: 1;
   background: #7f8c8d;
 }
 
-/* line 43, stylesheets/_directives.scss */
+/* line 60, stylesheets/_directives.scss */
 #sb-bar li a {
   float: left;
   margin-left: -4px;
 }
 
-/* line 48, stylesheets/_directives.scss */
+/* line 65, stylesheets/_directives.scss */
 #sb-bar > a:first-child,
 #sb-bar li:first-child a {
-  border-right: 1px solid;
+  border-right: 1px solid #7f8c8d;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
 
-/* line 55, stylesheets/_directives.scss */
+/* line 72, stylesheets/_directives.scss */
 #sb-bar > a:last-child,
 #sb-bar li:last-child > a {
-  border-left: 1px solid;
+  border-left: 1px solid #7f8c8d;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
