@@ -78,10 +78,27 @@ body{
 }
 
 .c-code-html{
-  text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   font-family: monospace, sans-serif;
-  margin-bottom: 60px;
+  background-color: #000;
+  color: #FFF;
+  padding: 12px 20px;
+  border-radius: 4px;
+  width: 680px;
+  margin: 60px auto;
+  line-height: 1.6;
+}
+
+.c-code-html-el{
+  color: #f92672;
+}
+
+.c-code-html-attr{
+  color: #a6e22e;
+}
+
+.c-code-html-attrvalue{
+  color: #e6db74;
 }
 
 .c-code-json{
