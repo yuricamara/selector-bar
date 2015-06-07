@@ -2,7 +2,7 @@
 
 module.exports = function(grunt){
 
-  require('time-grunt')(grunt);
+  //require('time-grunt')(grunt);
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -27,54 +27,6 @@ module.exports = function(grunt){
         ],
         dest: 'app/global/scripts/templates.js'
       }
-    },
-
-    /*********************
-      Build/Dev
-    **********************/
-    // concat: {
-    //     options:{
-    //       nonull: true
-    //     },
-    //     dev:{
-    //       src:[
-    //         'app/global/scripts/*.js',
-    //         'app/diretivas/**/*.js'
-    //       ],
-    //       dest:'app/global/scripts.js'
-    //     }
-    // },
-    copy: {
-      deploy: {
-        src: 'app/index.html',
-        dest: 'public/index.html',
-      }
-    },
-    filerev: {
-      deploy: {
-        src: [
-          'public/scripts.js',
-          'public/stylesheets.css'
-        ]
-      }
-    },
-    useminPrepare: {
-      html: 'public/index.html',
-      options: {
-        root: './app/',
-        dest: 'public/'
-      }
-    },
-    usemin: {
-      html: 'public/index.html'
-    },
-
-    /*********************
-      Clean
-    **********************/
-    clean:{
-      tmp: '.tmp',
-      public: 'public'
     },
 
     /*********************
@@ -117,30 +69,6 @@ module.exports = function(grunt){
       Tasks execution
   *********************************************************/
   grunt.loadNpmTasks('grunt-angular-templates');
-  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-compass');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-filerev');
-  grunt.loadNpmTasks('grunt-usemin');
-
-  /**********************************
-    build tasks
-  ***********************************/
-
-  grunt.registerTask('build', [
-    'clean',
-    'ngtemplates:main',
-    //'concat:dev',
-    'copy:deploy',
-    'useminPrepare',
-    'concat:generated',
-    'cssmin:generated',
-    'uglify:generated',
-    'filerev',
-    'usemin'
-  ]);
 };
