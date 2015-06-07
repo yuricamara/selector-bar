@@ -2,6 +2,11 @@
       directive.scss
 ********************************/
 
+#sb-bar{
+  margin: 60px auto;
+  display: table;
+}
+
 #sb-bar,
 #sb-bar li{
   outline-width: 0;
@@ -20,7 +25,6 @@
   -webkit-transition:border-bottom .6s linear 0s;
     transition-property:border-bottom .6s linear 0s;
 }
-
 
 #sb-bar .is-active a {
   border-bottom:5px solid #2ecc71;
