@@ -4,7 +4,8 @@ Selector Bar
 Barra seletora de objetos implementada como uma diretiva AngularJS.
 
 ```html
-<sb-bar options="options" ng-model="ngmodel"></sb-bar>
+<sb-bar options="options" ng-model="ngmodel">
+</sb-bar>
 ```
 
 onde:
@@ -13,4 +14,4 @@ onde:
 
 *ngmodel*: array com os objetos selecionados.
 
-[Clique aqui](www.yuricamara.com.br/projetos/selector-bar/) para exibir demo da app com explicação de funcionameto.
+[Clique aqui](http://www.yuricamara.com.br/projetos/selector-bar/) para exibir demo da app com explicação de funcionameto.
