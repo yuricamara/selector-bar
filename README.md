@@ -14,4 +14,4 @@ onde:
 
 *ngmodel*: array com os objetos selecionados.
 
-[Clique aqui](http://www.yuricamara.com.br/projetos/selector-bar/) para exibir demo da app com explicação de funcionameto.
+[Clique aqui](http://yuricamara.com.br/selector-bar/) para exibir demo da app com explicaÃ§Ã£o de funcionameto.
