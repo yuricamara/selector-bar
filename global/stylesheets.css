@@ -1,0 +1,361 @@
+/* line 5, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*******************************
+      directive.scss
+********************************/
+/* line 5, stylesheets/_directives.scss */
+sb-bar {
+  margin: 60px auto;
+  display: table;
+}
+
+/* line 10, stylesheets/_directives.scss */
+sb-bar,
+sb-bar li {
+  outline-width: 0;
+}
+
+/* line 15, stylesheets/_directives.scss */
+sb-bar a {
+  padding: 20px 20px 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  color: #7f8c8d;
+  cursor: pointer;
+  background: #2c3e50;
+  font-size: 21px;
+  border-bottom: 5px solid #34495e;
+  -webkit-transition: border-bottom .6s linear 0s;
+  transition-property: border-bottom .6s linear 0s;
+}
+
+/* line 29, stylesheets/_directives.scss */
+sb-bar .sb-selector-none a,
+sb-bar .sb-selector-all a {
+  color: #7272BF;
+}
+
+/* line 34, stylesheets/_directives.scss */
+sb-bar .sb-selector-fst-group a {
+  color: #C72929;
+}
+
+/* line 38, stylesheets/_directives.scss */
+sb-bar .sb-selector-snd-group a {
+  color: #42B071;
+}
+
+/* line 42, stylesheets/_directives.scss */
+sb-bar .sb-selector-unselectable-group a {
+  cursor: no-drop;
+}
+
+/* line 46, stylesheets/_directives.scss */
+sb-bar .sb-selector-fst-group.is-active a {
+  border-bottom: 5px solid red;
+  color: red;
+}
+
+/* line 51, stylesheets/_directives.scss */
+sb-bar .sb-selector-snd-group.is-active a {
+  border-bottom: 5px solid #2ecc71;
+  color: #2ecc71;
+}
+
+/* line 56, stylesheets/_directives.scss */
+sb-bar li {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #7f8c8d;
+}
+
+/* line 64, stylesheets/_directives.scss */
+sb-bar li a {
+  float: left;
+  margin-left: -4px;
+}
+
+/* line 69, stylesheets/_directives.scss */
+sb-bar > a:first-child,
+sb-bar li:first-child a {
+  border-right: 1px solid #7f8c8d;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/* line 76, stylesheets/_directives.scss */
+sb-bar > a:last-child,
+sb-bar li:last-child > a {
+  border-left: 1px solid #7f8c8d;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+@media screen and (max-width: 400px) {
+  /* line 84, stylesheets/_directives.scss */
+  sb-bar a {
+    padding: 14px 20px 10px 20px;
+  }
+}
+/*******************************
+      _not-directive.scss
+********************************/
+/**** reset ****/
+/* line 7, stylesheets/_not-directives.scss */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+/* line 13, stylesheets/_not-directives.scss */
+[ng-cloak] {
+  display: none;
+}
+
+/* line 17, stylesheets/_not-directives.scss */
+i {
+  font-style: italic;
+}
+
+/* line 21, stylesheets/_not-directives.scss */
+html,
+body {
+  height: 100%;
+}
+
+/**** layout *****/
+/* line 28, stylesheets/_not-directives.scss */
+.l-header-content,
+.l-main {
+  margin: 0 auto;
+  max-width: 1020px;
+}
+
+/* line 34, stylesheets/_not-directives.scss */
+.l-header {
+  background-color: #6797CF;
+}
+
+/* line 38, stylesheets/_not-directives.scss */
+.wrap-links-externos {
+  float: right;
+  margin: 27px 0;
+}
+
+/* line 43, stylesheets/_not-directives.scss */
+.wrap-links-externos > .links-externos {
+  float: left;
+}
+
+/* line 47, stylesheets/_not-directives.scss */
+.wrap-links-externos > .links-externos > a {
+  background: transparent url("../img/sprite-links-externos.png") no-repeat;
+  color: #9E9E9E;
+  height: 55px;
+  display: block;
+  text-align: center;
+  line-height: 140px;
+  text-indent: -9999px;
+}
+
+/* line 57, stylesheets/_not-directives.scss */
+.wrap-links-externos > .repositorio > a {
+  background-position: 0 -60px;
+  width: 63px;
+  margin-right: 10px;
+}
+
+/* line 64, stylesheets/_not-directives.scss */
+.wrap-links-externos > .portfolio > a {
+  background-position: 15px 0;
+  width: 80px;
+}
+
+/* line 69, stylesheets/_not-directives.scss */
+.c-page-title {
+  height: 110px;
+  line-height: 110px;
+  font-size: 32px;
+  font-family: Verdana, Geneva, "Droid Sans", sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  color: #F3F3F3;
+}
+
+/* line 79, stylesheets/_not-directives.scss */
+.c-code-html {
+  font-size: 18px;
+  font-family: "Courier New", Courier, monospace, "Droid Sans Mono", "DejaVu Sans Mono", sans-serif;
+  background-color: #000;
+  color: #FFF;
+  padding: 12px 20px;
+  border-radius: 4px;
+  max-width: 605px;
+  margin: 60px auto;
+  line-height: 1.6;
+}
+
+/* line 91, stylesheets/_not-directives.scss */
+.c-code-html-el {
+  color: #f92672;
+}
+
+/* line 95, stylesheets/_not-directives.scss */
+.c-code-html-attr {
+  color: #a6e22e;
+}
+
+/* line 99, stylesheets/_not-directives.scss */
+.c-code-html-attrvalue {
+  color: #e6db74;
+}
+
+/* line 103, stylesheets/_not-directives.scss */
+.c-code-json {
+  font-family: "Courier New", Courier, monospace, "Droid Sans Mono", "DejaVu Sans Mono", sans-serif;
+  font-size: 16px;
+  float: left;
+  margin-top: 10px;
+  white-space: pre;
+  background-color: #F0F0F0;
+  width: 100%;
+  height: 375px;
+  padding: 10px;
+}
+
+/* line 115, stylesheets/_not-directives.scss */
+.c-code-json-wrap {
+  float: left;
+  width: 50%;
+}
+
+/* line 120, stylesheets/_not-directives.scss */
+.c-code-json-title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #BBA901;
+  background-color: #F0F0F0;
+  padding: 10px;
+}
+
+/* line 128, stylesheets/_not-directives.scss */
+.c-infos {
+  clear: left;
+  padding: 40px 10px;
+  line-height: 1.3;
+}
+/* line 133, stylesheets/_not-directives.scss */
+.c-infos p {
+  text-indent: 20px;
+  margin-top: 5px;
+  font-size: 18px;
+}
+/* line 138, stylesheets/_not-directives.scss */
+.c-infos p:first-child {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 400px) {
+  /* line 145, stylesheets/_not-directives.scss */
+  .c-code-json {
+    font-size: 14px;
+    padding: 5px;
+    height: 325px;
+  }
+
+  /* line 151, stylesheets/_not-directives.scss */
+  .c-code-html {
+    font-size: 16px;
+  }
+
+  /* line 155, stylesheets/_not-directives.scss */
+  .c-code-json-title {
+    font-size: 18px;
+  }
+
+  /* line 159, stylesheets/_not-directives.scss */
+  .c-page-title {
+    font-size: 26px;
+  }
+
+  /* line 163, stylesheets/_not-directives.scss */
+  .c-infos p {
+    font-size: 16px;
+  }
+
+  /* line 167, stylesheets/_not-directives.scss */
+  .wrap-links-externos > .repositorio > a {
+    margin-right: 0;
+  }
+
+  /* line 171, stylesheets/_not-directives.scss */
+  .wrap-links-externos > .portfolio > a {
+    width: 72px;
+  }
+}

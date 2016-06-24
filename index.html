@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- build:css stylesheets.css -->
+  <link rel="stylesheet" href="global/stylesheets.css?v4">
+  <!-- endbuild -->
+  <title>Selector Bar</title>
+</head>
+<body ng-cloak>
+  <header class="l-header">
+    <div class="l-header-content">
+      <h1 class="c-page-title">Selector Bar</h1>
+      <ul class="wrap-links-externos">
+        <li class="repositorio links-externos">
+            <a href="https://github.com/yuricamara/selector-bar" title="Repositório no Github" target="_blank">Repositório</a>
+        </li>
+        <li class="portfolio links-externos">
+            <a href="http://www.yuricamara.com.br" title="Site do Desenvolvedor" target="_blank">Desenvolvedor</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main ng-controller="DataCtrl" class="l-container">
+    <div class="l-main">
+        <p class="c-code-html">
+          &lt;<span class="c-code-html-el">sb-bar</span><span class="c-code-html-attr"> options</span>=<span class="c-code-html-attrvalue">&quot;options&quot;</span><span class="c-code-html-attr"> ng-model</span>=<span class="c-code-html-attrvalue">&quot;selectedObject&quot;</span>&gt;<br>&lt;/<span class="c-code-html-el">sb-bar</span>&gt;
+        </p>
+
+        <sb-bar options="options" ng-model="selectedObject"></sb-bar>
+
+        <div class="c-code-json-wrap">
+          <p class="c-code-json-title">options</p>
+          <code>
+            <pre class="c-code-json">
+[
+  {
+    &quot;group&quot;: &quot;red&quot;,
+    &quot;value&quot;: &quot;4&quot;
+  },
+  {
+    &quot;group&quot;: &quot;red&quot;,
+    &quot;value&quot;: &quot;5&quot;
+  },
+  {
+    &quot;group&quot;: &quot;green&quot;,
+    &quot;value&quot;: &quot;1&quot;
+  },
+  {
+    &quot;group&quot;: &quot;green&quot;,
+    &quot;value&quot;: &quot;2&quot;
+  },
+  {
+    &quot;group&quot;: &quot;green&quot;,
+    &quot;value&quot;: &quot;3&quot;
+  }
+]
+              </pre>
+            </code>
+          </div>
+          <div class="c-code-json-wrap">
+            <p class="c-code-json-title">selectedObject</p>
+              <code>
+                <pre class="c-code-json">{{selectedObject | json}}</pre>
+              </code>
+          </div>
+        <div class="c-infos">
+          <p>
+            Temos aqui representada uma diretiva AngularJS de nome sbBar, composta de um atributo <i>options</i> que recebe um array de objetos e um ngModel que expõe um segundo array dinâmico de objetos em <i>selectedObject</i>. O array <i>selectedObject</i> é montado de acordo com os seletores selecionados na selector bar e o array vindo de <i>options</i>.
+          </p>
+          <p>
+            Cada seletor colorido da selector bar representa um dos objetos contidos no array <i>options</i> exceto os seletores cinzas que são meros placeholders.
+          </p>
+          <p>
+            A selector bar é criada dinamicamente de acordo com o valor do array <i>options</i>. Os objetos deste array com propriedade group igual a red são colocados a esquerda da barra. Os objetos com propriedade group igual a green são colocados após os seletores vermelhos. A quantidade de placeholders é definida dentro de um valor constant interno.
+          </p>
+          <p>
+             Os objetos são adicionados ou retirados do array <i>selectedObject</i> na ordem que são selecionados.
+          </p>
+          <p>
+            Use CTRL para selecionar mais de um seletor.
+          </p>
+        </div>
+    </div>
+  </main>
+
+  <!-- build:js scripts.js -->
+
+  <script src="vendors/bower_components/angular/angular.min.js" type="text/javascript"></script>
+  <script src="vendors/bower_components/lodash/dist/lodash.min.js" type="text/javascript"></script>
+
+  <script src="global/scripts/app.js?v3" type="text/javascript"></script>
+  <script src="global/scripts/templates.js?v2" type="text/javascript"></script>
+
+  <script src="diretivas/sb-bar/sb-bar-controller.js?v2" type="text/javascript"></script>
+  <script src="diretivas/sb-bar/sb-bar-directive.js?v2" type="text/javascript"></script>
+  <script src="diretivas/sb-selector/sb-selector-directive.js?v2" type="text/javascript"></script>
+
+</body>
+</html>
